@@ -13,7 +13,7 @@ Enhance your history object with one of the scroll behaviors in this library to 
 import browserHistory from 'react-router/lib/browserHistory'
 import useScroll from 'scroll-behavior/lib/useStandardScroll'
 
-const history = useScroll(browserHistory)()
+const history = useScroll(browserHistory)
 ```
 
 ## Guide
