@@ -13,7 +13,7 @@ describe('useScrollToTop', () => {
       let history, unlisten
 
       beforeEach(() => {
-        history = useRoutes(useScrollToTop(createHistory))()
+        history = useRoutes(useScrollToTop(createHistory))
       })
 
       afterEach(() => {
@@ -26,7 +26,7 @@ describe('useScrollToTop', () => {
         unlisten = run(history, [
           () => {
             scrollTop(window, 15000)
-            history.pushState(null, '/detail')
+            history.push('/detail')
           },
           () => {
             expect(scrollTop(window)).toBe(0)
@@ -39,7 +39,7 @@ describe('useScrollToTop', () => {
         unlisten = run(history, [
           () => {
             scrollTop(window, 15000)
-            history.pushState(null, '/detail')
+            history.push('/detail')
           },
           () => {
             history.goBack()

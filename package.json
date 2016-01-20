@@ -59,6 +59,7 @@
     "react-router": "^2.0.0-rc5"
   },
   "dependencies": {
-    "dom-helpers": "^2.4.0"
+    "dom-helpers": "^2.4.0",
+    "history": "^2.0.0-rc2"
   }
 }
